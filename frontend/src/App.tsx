@@ -1,0 +1,23 @@
+import React from 'react'
+import './App.css'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Signin from './pages/Signin'
+import SignUp from './pages/SignUp'
+import Blog from './pages/Blog'
+
+function App() {
+
+
+  return (
+    <BrowserRouter>
+    <Routes>
+      <Route path='/signin' element=<Signin/> />
+      <Route path='/signup' element=<SignUp/> />
+      <Route path='/blog/:id' element=<Blog/> />
+  
+    </Routes>
+    </BrowserRouter>
+  )
+}
+
+export default App
