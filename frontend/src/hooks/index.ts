@@ -6,6 +6,8 @@ import { BACKEND_URL } from "../config";
 interface Blog {
   title: string;
   content: string;
+  id:any;
+  author:any;
 }
 
 export const useBlogs = () => {
