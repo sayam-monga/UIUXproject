@@ -1,0 +1,1 @@
+export const BACKEND_URL = "https://backend.sayammonga007.workers.dev/api/v1"

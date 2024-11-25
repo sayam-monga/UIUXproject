@@ -1,12 +1,15 @@
-import React from 'react'
-import FormSignIn from '../components/FormSignIn'
 
-function Signin() {
+import Auth from "../components/Auth";
+import Quote from "../components/Quote";
+const Signin = () => {
   return (
-    < div className=" h-screen flex justify-center items-center">
-    <FormSignIn/>
-  </ div>
-
+    <div>
+        <div className="grid grid-cols-1 lg:grid-cols-2">
+          <Auth type="signin"/>
+          <Quote/>
+        </div>
+        
+    </div>
   )
 }
 
