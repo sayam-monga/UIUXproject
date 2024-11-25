@@ -2,6 +2,12 @@ import { useParams } from "react-router-dom";
 import AppBar from "../components/AppBar";
 import { useGetBlog } from "../hooks";
 import { InfinitySpin } from "react-loader-spinner";
+interface Blog {
+  id: number; // Add 'id' as a number
+  title: string;
+  content: string;
+  author?: string; // Optionally include author if needed
+}
 
 const Blog = () => {
   const { id } = useParams();
